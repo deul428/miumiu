@@ -1,0 +1,237 @@
+@charset "UTF-8"; /*@charset "euc-kr"; */
+
+/************************************************************************
+ * 최적화       : html5
+ * 서비스       : alps
+ * 최초작성일   : 210319
+ * 작성자       : 박노성
+************************************************************************/
+
+
+/*■ 채널의 기본 element 정의 ■*/
+/*html5 element make*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1;}
+/* * Prevent modern browsers from displaying `audio` without controls.  * Remove excess height in iOS 5 devices.  */
+audio:not([controls]) { display: none; height: 0; }
+/** Address styling not present in IE 7/8/9, Firefox 3, and Safari 4. * Known issue: no IE 6 support.*/
+[hidden] { display: none;}
+
+/* Base
+------------------------------------------------------------------------------------- */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html, button, input, select, textarea {}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea { margin: 0; padding: 0; vertical-align: baseline; outline:none;}
+
+/* Links
+------------------------------------------------------------------------------------- */
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+
+/*Selection
+------------------------------------------------------------------------------------- */	
+::selection{
+	color:#FFF;
+	text-shadow:none;
+    background:#be9193;
+}
+
+/*데스크탑에서 스크롤바 가리기
+-------------------------------------------------------------------------------------
+::-webkit-scrollbar-thumb:vertical{height:0px;}
+::-webkit-scrollbar-thumb:horizontal{width:0px;}
+::-webkit-scrollbar{width:0; height:0;}*/
+/*Transition
+------------------------------------------------------------------------------------- */	
+
+/* Typography
+------------------------------------------------------------------------------------- */
+html, input, textarea { color: #222; font-size:13px; line-height: 1.25em;}
+h1, h2, h3, h4, h5, h6 { font-weight: normal; line-height: 1em;}
+
+/*mark,인용*/
+abbr[title] { border-bottom: 1px dotted;}
+b, strong { font-weight: bold;}
+blockquote {}
+pre {}
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; display: none; margin:50px 0;}
+mark { background: #ff0; color: #000; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -2px; }
+sub { bottom: -2px; }
+
+/* Lists
+------------------------------------------------------------------------------------- */
+ul, ol { list-style: none; list-style-image: none; padding: 0; }
+
+/* Embedded content
+------------------------------------------------------------------------------------- */
+div, img { border: 0; -ms-interpolation-mode: bicubic; vertical-align:middle;}
+svg:not(:root) { overflow: hidden; }
+
+/* Forms
+------------------------------------------------------------------------------------- */
+.form * {outline: 0;}
+button, input, select, textarea { font-size: 100%; vertical-align:baseline; *vertical-align: middle; outline: 0;}
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; *overflow: visible;}
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; margin-right:2px;}
+input[type="radio"] { margin-top:-3px;}
+input[type="checkbox"] { margin-top:-3px;}
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0;}
+textarea { overflow: auto; vertical-align: top;}
+input, select { vertical-align:middle;}
+label { padding-right:0;}
+
+/* Tables
+------------------------------------------------------------------------------------- */
+table {border-collapse: collapse; empty-cells:show; border-spacing: 0;}
+table th,table td {border:1px solid #ccc;}
+
+
+/*■■ 채널의 공통영역 정의 ■■*/
+	/* 기본 링크 정의
+	----------------------- */
+	/* color-anchor*/
+	a {color: #000; background:none; line-height: 1em;}
+	a:link, a:visited {color:#000; background:none;}
+	a:hover, a:active {color:#be9193; background:none;}
+	a:focus { outline:none;  background:none;}
+	
+		
+	
+	
+	/* Background Color 정의
+	----------------------- */	
+		
+	/* Text 정의
+	----------------------- */
+	
+	
+	/* Vertical 정의
+	----------------------- */
+	
+	/* border 정의
+	----------------------- */
+	
+	
+	/* margin,padding 정의
+	----------------------- */
+	
+	/* Float 정의
+	----------------------- */
+	
+	/* position 정의
+	----------------------- */
+		
+	/* clear 정의
+	----------------------- */
+	.clearfix:before,
+	.clearfix:after {content: "";display: table;} 
+	.clearfix:after {clear: both;}
+	.clearfix {zoom: 1; /* For IE 6/7 (trigger hasLayout) */}
+	.p_clear {height:1%; overflow:hidden;} /*%를 이용한 Float의 초기화시 브라우져 크기에 따라 떨어짐오류발생 주의바람*/
+	.p_clear {clear:both;}
+		
+	/* Display 정의
+	----------------------- */
+	.hidden {position: absolute; z-index: -1; visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0;}
+	.blind {display: none;}
+		
+	/* Opacity정의
+	----------------------- */
+	
+	/* 인쇄 잘리기 정의
+	----------------------- */
+
+/*■■ 채널 공통 템플릿 정의 ■■*/
+	/* 표 table or Div Style 정의 : Table안의 Table 사용가능하게 정의
+	----------------------- */
+	
+	/* 리스트 Table or Div Style 정의 : Table안의 Table 사용가능하게 정의
+	----------------------- */
+	
+	/* table_top 정의
+	----------------------- */
+	
+	/* box 정의
+	----------------------- */
+	
+	/* Title Style 정의
+	----------------------- */
+			
+	/* list Style 정의 - Contents List영역(2~6줄)의 정의
+	----------------------- */
+	
+	/* Tab Style 정의
+	----------------------- */
+	
+	/* Bullet(title용) 정의
+	----------------------- */
+		
+	/* Bullet(list용) 정의
+	----------------------- */
+	
+	/* line 정의
+	----------------------- */
+	
+	/* box 정의
+	----------------------- */
+	
+	/* button Style 정의
+	----------------------- */
+	
+	/* pagination 정의
+	----------------------- */
+	
+	/* search 정의
+	----------------------- */
+	
+	/* Scroll 정의
+	----------------------- */
+	
+	/* Animat 정의
+	----------------------- */
+	
+	/* Keyframes 정의
+	----------------------- */
+	
+	/* placeholder 정의
+	----------------------- */
+	
+	::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #666;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color:    #666;
+	    opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #666;
+        opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    #666;
+	}
+	/* z-index 정의
+	----------------------- */
+
+
+/*■■ 채널 공통 레이아웃, 디자인 ID,Class,Element 정의 ■■*/
+	/* SGNB GNB or Header 영역
+	----------------------- */		
+	/* body 영역
+	----------------------- */	
+	/* Left 영역
+	----------------------- */	
+	/* content 영역
+	----------------------- */
+	/* footer 영역
+	----------------------- */
+	/* footer */

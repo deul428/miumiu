@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* section 01 시작 */
+/* section 크기 잡아 줌 clip-path로 요소를 잘라내서 밑 영역에 침범해 보이는 것을 방지해 줌. */
+#visual.section_01{ position: relative; top: 0; overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+/* 영상 위치/크기 잡아 줌 */
+#visual.section_01 #video_con{ position: absolute; top: 0; left: 0; width: 100%; height: calc(100% + 120px); margin-top: -60px; pointer-events: none; }
+/* 비율 가이드를 깔아서 영상 width 값을 쉽게 잡아 줌 */
+#visual.section_01 img.guide_ratio{ width: 100%; }
+/* 가운데 문구 스타일 */
+#visual.section_01 h1.copy{ position: fixed; top: 50%; left: 50%; margin: -25px 0 0 -250px; width: 500px; height: 50px; line-height: 50px; text-align: center; color: #fff; mix-blend-mode: overlay; }
+/* section 01 끝 */
+
+/* section 02 시작 */
+#about_us.section_02{}
+/* 각 하위 섹션(founding/identity)의 타이틀 */
+#about_us.section_02 .section_title{ position: relative; margin: 60px 0 40px; color: #000; transition: all 1s ease-in-out; }
+/* translateY 값을 40px로 잡아서 기본값인 20px보다 좀 더 크게 올라오도록 지정 */
+#about_us.section_02 .section_title.wait_scroll{ transform: translateY(40px); background: #fff; opacity: 0; }
+/* 타이틀 밑의 밑줄 */
+#about_us.section_02 .section_title:after{ position: absolute; content: ''; left: 0; bottom: -10px; height: 2px; width:67px; background: #e8b9c8; transition: all 1.5s ease-in-out; }
+/* 밑줄 가로가 줄어드는 transition 효과를 주기 위해서 after 속성에 width 값을 설정해 줌 */
+#about_us.section_02 .section_title.wait_scroll:after{ width: 500px; }
+/* 이미지 박스 영역 */
+#about_us.section_02 .img_box { position: relative; font-size: 12px; margin-top: 50px; transition: all 1s ease-in-out; }
+/* section_title.wait_scroll과 동일 */
+#about_us.section_02 .img_box.wait_scroll { transform: translateY(40px); opacity: 0; }
+/* 각 콘텐츠 요소의 제목 */
+#about_us.section_02 .img_box b{ display: block; margin-bottom: 10px; line-height: 1.25em; font-size: 18px;  letter-spacing: -0.5px; }
+/* 각 콘텐츠 요소의 설명 */
+#about_us.section_02 .img_box .desc{ position: absolute; top:0; left: 0; width: 376px; }
+/* 설명이 오른쪽 정렬된 요소 */
+#about_us.section_02 .img_box .desc.align_right{ text-align: right; }
+/* img_box area의 각 image 박스들*/
+#about_us.section_02 .img_box .image{ width: 788px; margin-left: 412px; overflow: hidden; }
+/* 각 image 박스 안의 이미지들 */
+#about_us.section_02 .img_box .image img{ width: 100%; transition: all 0.5s ease-out; }
+/* image 박스 hover시 이미지에 줄 효과들. 1.05배 커지고 1.1배 밝아짐 */
+#about_us.section_02 .img_box .image:hover img{ transform: scale(1.05); filter: brightness(1.1); }
+/* 이미지 박스가 왼쪽 정렬인 경우 */
+#about_us.section_02 .img_box.left_side {}
+#about_us.section_02 .img_box.left_side .image{ width: 685px; margin-left: 0; }
+#about_us.section_02 .img_box.left_side .desc{ left: auto; right: 0; width: 479px; }
+/* section 02 끝 */
+
+/* section 03 시작 */
+#signature.section_03{ position: relative; height: 100vh; max-height: 1000px; }
+/**/
+#signature.section_03 .left_con,
+#signature.section_03 .right_con{ display: inline-block; *display: inline; *zoom: 1; height:100%; }
+/*display: inline-block 사진 가로정렬해줌 */
+#signature.section_03 .left_con{ width: calc(50% + 497px); background: #be9193;  overflow: hidden; }
+/*calc를 사용해 위치를 잡아줌 overflow:hidden으로 큰 이미지를 지정한 사이즈 크기로 잘라냄 */
+#signature.section_03 .left_con iframe{ width: 100%; height: 100%; }
+/*사이즈 조정해줌*/
+#signature.section_03 .right_con{ width: calc(50% - 497px); background: #be9193; }
+/*left_con 같은 원리*/
+#signature.section_03 .title_con { position: absolute; bottom: 250px; width:376px; left: calc(50% + 224px); }
+/* left: calc(50% + 224px 사용해 완쪽 정렬의 텍스트 위치 잡아줌*/
+#signature.section_03 .title_con *{ color:#fff; text-align: right; }
+/*텍스트 정렬을 오른쪽으로 해줌*/
+#signature.section_03 .title_con h4:before{ display: none; }
+/*display:none 으로 막대기 h4:before 를 안보이게함 */
+/* section 03 끝 */
+
+/* section 04 시작 */
+#product.section_04{ background: #fff; }
+/*scetion_04 배경색을 깔아줌*/
+#product.section_04 .title_con h4 { margin-bottom: 60px; }
+/*title_con의 bottom margin을 60px만큼 width_con과의 간격을 띄어줌 */
+#product.section_04 .width_con{ width: 1200px; }
+/*시안대로 1200px 크기를 만들어줌*/
+#product.section_04 .width_con .boxes { position: relative; margin: 0 -18px; }
+/*margin 좌우 -18px 로 간격을 좁혀 가로의 모든 박스가 나열되게 정렬해줌*/
+#product.section_04 .width_con .boxes .box{ display: inline-block; width: 273px; height: 273px; position: relative; overflow: hidden; margin: 0 18px; }
+/*display: inline-block 으로 가로로 정렬해주고 크기를 조정해줌 margin 18px로 가운데로 옮겨줌*/ 
+#product.section_04 .width_con .boxes .box:hover{}
+#product.section_04 .width_con .boxes .box:hover:after { transition: all 0.25s linear; content: ''; background: rgba(0, 0, 0, 0.3); position: absolute; top: 0; left: 0; width: 273px; height: 273px; }
+/*hover 했을 때 본래 박스와 같은 크기의 rgba(0, 0, 0, 0.3) 의 색으로 :after 를 만들어줌, 트렌지션을 넣어줌으로써 자연스러운 움직임을 줌*/
+#product.section_04 .width_con .boxes .box img { width: 100%; height: 100%; /*transition: all 0.25s ease-in-out;*/ }
+#product.section_04 .width_con .boxes .box:hover img { transition: all 0.15s linear; transform: scale(1.03); filter: blur(4px); }
+/*hover 했을 때 transform: scale(1.03) 로 이미지가 확대되고 filter: blur(4px)로 이미지가 흐려지는 듯한 블러효과를 넣어줌*/
+#product.section_04 .width_con .boxes .box .btn{ position: absolute; top:50%; left:50%; margin: -21px 0 0 -55px; width: 100px; height: 35px; line-height: 35px; border: 4px solid #fff; color: #fff; font-family: 'Roboto', san-serif; font-weight: 500; font-size: 18px; text-align: center; vertical-align: middle; text-transform: uppercase; opacity: 0;  cursor: pointer; transition: all 0.15s linear; z-index: 999; }
+/*이미지 박스안에 텍스트 버튼을 만들어 줌 cursor: pointer 를 사용해 마우스를 대면 포인터로 바뀌는 효과를 줌 z-index 로 이미지보다 위에 보여지게 해줌*/
+#product.section_04 .width_con .boxes .box:hover .btn{ opacity: 1; }
+/*opacity:1 로 박스를 hover 했을 때에도 텍스트 버튼이 사리지지 않고 보이게 해줌 */
+#product.section_04 .width_con .boxes .box .btn:hover{ background: #fff; color:#000; opacity: 1; z-index: 999; }
+/*텍스트 버튼이 hover됐을 때 비었던 배경이 #fff로 바뀌고 텍스트는 #000으로 바귐 위와 같이 opacity 와 z-index를 사용해 눈에 보여지게 해줌*/
+#product.section_04 .width_con .boxes .box .btn:active{ color: #fff; border-color: #000; background: #000; }
+/*텍스트 버튼이 active 됐을 때 border와 배경이 검정색으로 반전됨*/
+/* section 04 끝 */
+
+/* section 05 시작 */
+#show.section_05{ width: 100%; background-image: url("https://i.postimg.cc/wTW8yStN/img-show-bg.jpg"); }
+/*마테라쎄무늬를 배경으로 깔아줌*/
+#show.section_05 .width_con{ width: 1200px; margin:0 auto; }
+#show.section_05 .width_con .title_con h2 { margin-bottom: 10px; }
+
+#show.section_05 .width_con .text_slide { height: 139px; pointer-events:none; }
+/*텍스트에 드래그 하는 방식으로 텍스트 슬라이드를 넘기지않도록 pointer-event를 none으로 하여 HTML 요소에 정의된 클릭, 상태(hover,active등), 커서 옵션들이 비활성화한다.*/
+#show.section_05 .width_con .text_slide h5 { margin-top: 32px; text-align: center; }
+#show.section_05 .width_con .text_slide h5:before{ position: absolute; left: 50%; margin-left: -18px; content: ''; top:-20px; width: 36px; height: 2px; background: #e8b9c8; }
+#show.section_05 .width_con .text_slide h4 { position: relative; width: 583px; margin: 16px auto 0; text-align: center; }
+#show.section_05 .width_con .text_slide h4:before { display:none; }
+
+#show.section_05 .width_con .box_slide { margin: 22px -18px 0; }
+#show.section_05 .width_con .box_slide:before,
+#show.section_05 .width_con .box_slide:after { content: ''; width: 1px; height: 700px; position: absolute; top: -11px;  z-index: 2; box-shadow: 0 0 15px 15px #efeae4; }
+/*패션쇼 이미지 넘어갈 때 양 끝에 그라데이션*/
+#show.section_05 .width_con .box_slide:before { left: -1px; }
+#show.section_05 .width_con .box_slide:after { right: -1px; }
+/*양쪽으로 위치 잡아주기*/
+#show.section_05 .width_con .box_slide .item{ width: 376px; margin: 10px 18px; }
+#show.section_05 .width_con .box_slide .item img { width: 100%; }
+/*width:100%를 주어야 .box_slide .item에 지정해준 크기와 맞출 수 있음*/
+#show.section_05 .width_con .box_slide .slick-prev { position: absolute; left: 75%; top: calc(101% - 2px); color: #7a5a5b; }
+#show.section_05 .width_con .box_slide .slick-next { position: absolute; right: 75%; top: calc(101% - 2px); color: #7a5a5b; }
+/*slick이 html에 없는데 box_slide의 하위요소로 줄 수 있는 이유는 슬릭내장소스라 가능, text_slide의 하위요소로 해봤는데 위치만 달라질 뿐 
+슬라이드는 잘 넘어감 걍 사진 중앙을 가버림. 글고 calc에서 101%로 한 이유는 위치 잡아주기 위해!*/
+/* section 05 끝 */
+
+/* add section 08 시작 */
+#ad.section_08 { background: url(../img/img_add_section.png) 50% center no-repeat; background-size: cover; background-attachment: fixed; }
+/*배경으로 이미지를 깔아주고 반복되지않고 이미지가 찌그러지지 않는 한도 내에서 제일 크게 설정. fixed로 이미지 고정시킴*/
+#ad.section_08:before { position: absolute; content:''; top:0; left:0; width:100%; height:100%; background: rgba(190, 145, 147, 0.35) url(../img/cover_dot.png); opacity: 0.65; }
+/*도트이미지를 배경위에 레이어하는 것이므로 absolute 사용*/
+#dd.section_08 .width_con { padding: 200px 0; }
+#ad.section_08 .width_con .title_con h2, #ad.section_08 .width_con .title_con h4 { color: #fff; }
+/* add section 08 끝 */
+
+/* section 06 시작 */
+#campaign.section_06{}
+#campaign.section_06 .width_con{ background: #fff; }
+#campaign.section_06 .width_con .title_con{ margin-bottom: 60px; }
+#campaign.section_06 .width_con .boxes .box { position: relative; background: #000; display: inline-block; width: 600px; overflow: hidden; }
+/* 박스 설정 */
+#campaign.section_06 .width_con .boxes .box img{ position: relative; width: 100%; transition: all 1s ease-in-out; z-index: 1; }
+/* 박스 이미지(썸네일) */
+#campaign.section_06 .width_con .boxes .box:hover img{ opacity: 0; transition: inherit; }
+/* 박스 이미지 hover (투명도 설정)*/
+#campaign.section_06 .width_con .boxes .box:before{ position: absolute; left: 0; top: 0; line-height: 750px; width: 100%; height: 100%; background: rgba(0,0,0,0.4); color:#fff; text-align: center; font-size: 22px; text-transform: capitalize; z-index: 100; transition: all 1s ease-in-out; }
+/* 박스 이미지 썸네일 텍스트*/
+#campaign.section_06 .width_con .boxes .box_01:before{ content:'women\0027s tales'; }
+#campaign.section_06 .width_con .boxes .box_02:before{ content:'special project'; }
+#campaign.section_06 .width_con .boxes .box:hover:before{ content: ''; background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.4) 29%, rgba(255,255,255,0) 57%); z-index: 1; }
+/* 텍스트 박스 hover시 bg 그라데이션 */
+#campaign.section_06 .width_con .boxes .box .desc{ opacity:0; position: absolute; width: 488px; bottom: 8%; margin: 0 57px; color: #fff; z-index: 99; } 
+/* 텍스트 박스 */
+#campaign.section_06 .width_con .boxes .box .desc:before{ content: ''; position: absolute; top: 30px; left: 0; margin-left: 0px; width: 488px; height: 2px; background: #fff; }
+#campaign.section_06 .width_con .boxes .box .desc p{ margin-top: 20px; }
+#campaign.section_06 .width_con .boxes .box:hover .desc{ opacity: 1; color:#fff; }
+/* 박스 hover시 텍스트 박스 (투명도 설정) */
+#campaign.section_06 .width_con .boxes .box iframe.cn_video{ position: absolute; top: -150px; left : 50%; margin-left: -667px; height: 1050px; width: 1334px; }
+/* 영상 위치 설정 */
+#campaign.section_06 .width_con .boxes .box .video__item { pointer-events: none; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+/* section 06 끝 */
+
+/* section 07 시작 */
+#store.section_07 {}
+#store.section_07 .width_con { width: 100%; background: #be9193; }
+/* 섹션07 (배경색 시그니처컬러 설정) */
+#store.section_07 .width_con .boxes { margin: 58px 0 -2px; height: 455px; }
+#store.section_07 .width_con .boxes.bump {}
+#store.section_07 .width_con .boxes .box{ margin: 0 -59px; width: 788px; transition: all 0.25s ease-in-out; transform: scale(0.6079); transform-origin: 50% 374px; }
+/* 기본 슬라이드 크기 (축소 설정)*/
+#store.section_07 .width_con .boxes .box.slick-current { position:relative; z-index: 1; transform: scale(1); }
+/* 가운데에 올경우 크기 확대 */
+#store.section_07 .width_con .boxes .box img { width: 100%; }
+#store.section_07 .width_con .boxes .box h3 { text-transform: capitalize; margin: 58px 0 0 0; color:#222; text-align: center; }
+/* 매장 위치명 */
+#store.section_07 .width_con .boxes .box h4 { font-size: 12px; color: #050505; text-align: center; }
+/* 매장 주소명 */
+#store.section_07 .width_con .boxes .box h3,
+#store.section_07 .width_con .boxes .box h4 { transform: scale(1.35); transition: inherit; }
+/* 기본 설정(축소상태)에서 글씨 확대 */
+#store.section_07 .width_con .boxes .box.slick-current h3,
+#store.section_07 .width_con .boxes .box.slick-current h4 { transform: scale(1); }
+#store.section_07 .width_con .boxes .box.slick-current h3 { margin: 30px 0 0 0; }
+#store.section_07 .width_con .boxes .box.slick-current h4 { margin: 15px 0 0; }
+#store.section_07 .width_con .boxes .box h4:before { display: none; }
+/* section 07 끝 */

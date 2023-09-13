@@ -1,0 +1,274 @@
+%!Adobe-FontList 1.22
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Black
+FamilyName:Eastman
+StyleName:Alternate Black
+FullName:Eastman Alternate Black
+MenuName:Eastman Alternate Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Black.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:165968
+FileModTime:1652506412
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Black
+NameArray:0,Win,1,Eastman Alternate Black
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Bold
+FamilyName:Eastman
+StyleName:Alternate Bold
+FullName:Eastman Alternate Bold
+MenuName:Eastman Alternate Bold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:164648
+FileModTime:1652506412
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Bold
+NameArray:0,Win,1,Eastman Alternate Bold
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Extrabold
+FamilyName:Eastman
+StyleName:Alternate Extrabold
+FullName:Eastman Alternate Extrabold
+MenuName:Eastman Alternate Extrabold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Extrabold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:165488
+FileModTime:1652506414
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Extrabold
+NameArray:0,Win,1,Eastman Alternate Extrabold
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Extralight
+FamilyName:Eastman
+StyleName:Alternate Extralight
+FullName:Eastman Alternate Extralight
+MenuName:Eastman Alternate Extralight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Extralight.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:160556
+FileModTime:1652506414
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Extralight
+NameArray:0,Win,1,Eastman Alternate Extralight
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Heavy
+FamilyName:Eastman
+StyleName:Alternate Heavy
+FullName:Eastman Alternate Heavy
+MenuName:Eastman Alternate Heavy
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Heavy.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:165544
+FileModTime:1652506414
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Heavy
+NameArray:0,Win,1,Eastman Alternate Heavy
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Light
+FamilyName:Eastman
+StyleName:Alternate Light
+FullName:Eastman Alternate Light
+MenuName:Eastman Alternate Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:163408
+FileModTime:1652506414
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Light
+NameArray:0,Win,1,Eastman Alternate Light
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Medium
+FamilyName:Eastman
+StyleName:Alternate Medium
+FullName:Eastman Alternate Medium
+MenuName:Eastman Alternate Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:166404
+FileModTime:1652506414
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Medium
+NameArray:0,Win,1,Eastman Alternate Medium
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Regular
+FamilyName:Eastman
+StyleName:Alternate
+FullName:Eastman Alternate
+MenuName:Eastman Alternate
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:163664
+FileModTime:1652506414
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate
+NameArray:0,Win,1,Eastman Alternate
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-RegularOffset
+FamilyName:Eastman
+StyleName:Alternate Offset
+FullName:Eastman Alternate Offset
+MenuName:Eastman Alternate Offset
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-RegularOffset.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:162824
+FileModTime:1652506416
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Offset
+NameArray:0,Win,1,Eastman Alternate Offset
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternate-Thin
+FamilyName:Eastman
+StyleName:Alternate Thin
+FullName:Eastman Alternate Thin
+MenuName:Eastman Alternate Thin
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternate-Thin.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:158612
+FileModTime:1652506416
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Thin
+NameArray:0,Win,1,Eastman Alternate Thin
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EastmanAlternateVariable
+FamilyName:Eastman
+StyleName:Alternate Variable
+FullName:Eastman Alternate Variable
+MenuName:Eastman Alternate Variable
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\EastmanAlternateVariable.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:168676
+FileModTime:1652506416
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Eastman Alternate Variable
+NameArray:0,Win,1,Eastman Alternate Variable
+NameArray:0,Win,16,Eastman
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Administrator\Desktop\써니\220516_강사수정\Font\desktop.ini
+FileModTime:1652473242
+%EndFont
+

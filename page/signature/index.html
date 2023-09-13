@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>이미지 전환</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/TweenMax.min.js"></script> 
+        <script src="js/three.min.js"></script>
+        <script src="js/hover.js"></script>
+        <style type="text/css">
+            html,body{ overflow: hidden;}
+            .bg{position: absolute; top: 0; left: 0; width:100%; height:100%; overflow: hidden; pointer-events: none;}
+            .bg .canvas_con{position:absolute; top:50%; left:50%;}
+        </style>
+        <script type="text/javascript">
+            
+            
+            var mywave_1, mywave_2, mywave_3, mywave_4, interval;
+            function resize(){                
+                var wh = $(".sign_con").height();
+                $(".wave_con").height(wh).width(wh);              
+                
+                var bg_h = $(".bg").height();
+                var bg_w = $(".bg").width();
+                if(bg_h > bg_w){
+                    $(".bg .canvas_con").css({width:bg_h,height:bg_h,marginTop:-bg_h/2,marginLeft:-bg_h/2});
+                }else{
+                    $(".bg .canvas_con").css({width:bg_w,height:bg_w,marginTop:-bg_w/2,marginLeft:-bg_w/2});
+                }
+            }
+            window.onresize = resize;
+            $(function(){
+                resize();
+            });
+        </script>
+    </head>
+    <body class="load">
+        <div class="bg">
+            <div class="canvas_con cancon_1"></div>
+            <div class="canvas_con cancon_2"></div>
+        </div>
+        <script type="text/javascript">
+            function change_bg(x,y){
+                new hoverEffect({
+                    parent: document.querySelector(".cancon_"+x),
+                    intensity: 0.25
+                });
+                $(".cancon_"+x).animate({opacity:1},50);
+                $(".cancon_"+y).animate({opacity:0}, 500, function(){
+                    $(this).html("");
+                });
+                bg_recycle(x,y);
+            }
+            function bg_recycle(y,x){
+                setTimeout(function(){    
+                    change_bg(x,y);
+                }, 6500);
+            }
+            $(function(){
+                change_bg(1,2);
+            });
+        </script>
+        
+    </body>
+</html>

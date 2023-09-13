@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('EastmanAlternate.css');
+/*
+font-family: 'Eastman Alternate';
+font-family: 'Roboto', sans-serif;
+*/
+html, body{ font-family: 'Roboto', sans-serif; min-width: 1200px; max-width: 1920px; margin: 0 auto; }
+input, select, textarea, option { font-family: 'Roboto', sans-serif; }
+h1,h2,h3,h4,h5,h6{ position: relative; }
+
+h1{ font-size: 72px; font-weight: 500; }
+h2{ font-family: 'Eastman Alternate'; font-weight: 800; font-size: 34px; text-transform: uppercase; }
+h3{ font-family: 'Roboto', sans-serif; margin-bottom: 10px; color: #e8b9c8; font-size: 22px; text-transform: uppercase; }
+h4{ margin-top: 32px; line-height: 1.1; font-size: 14px; }
+h4:before{ position: absolute; content: ''; left: 0; top:-20px; width: 36px; height: 2px; background: #e8b9c8; }
+h5{ font-size: 16px; font-weight: 500; text-transform: uppercase; } /* #show 영역에서 사용 */
+h6{}
+
+.title_con{ position: relative; z-index: 1; }
+.title_con.center{ text-align: center; }
+.title_con.center h4:before{ left: 50%; margin: 3px 0 0 -18px; }
+
+.title_con.wait_scroll{}
+.title_con.wait_scroll h2,
+.title_con.wait_scroll h3,
+.title_con.wait_scroll h4,
+/* 밑에서 올라오는 스타일 */
+.title_con.wait_scroll h4:before{ transform: translateY(20px); opacity: 0; }
+.title_con.wait_scroll h4:before{}
+.title_con h2,
+.title_con h3,
+.title_con h4,
+.title_con h4:before{ transition: all 0.5s ease-out; }
+.title_con h2{ transition-delay: 0.25s; }
+.title_con h3{}
+.title_con h4{ transition-delay: 0.5s; }
+.title_con h4:before{ transition-delay: 0.3s; }
+
+.show_trigger{ position: absolute; bottom: -75px; left: 50%; width: 1px; height: 1px;}
+
+a{ text-decoration: none; }
+.wrap{}
+.wrap > *{}
+.sections{ position: relative; }
+.width_con{ position: relative; width: 1200px; margin: 0 auto; padding: 120px 0; }
+
+/* ================ header section ============= */
+#header{ position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; background: rgba(255,255,255,0.9); border-top: 3px solid #eeccd6; transition: all 0.2s linear; }
+/* hover시 백그라운드 #fff */
+#header:hover{ background: rgba(255,255,255,1); } 
+/* header 배경에 블러 필터 먹여서 밑에 깔리는 콘텐츠들이 블러 처리 되도록 제어 */
+#header .width_con{ padding: 0; backdrop-filter: blur(10px); }
+#header .width_con a.btn_home{ position: relative; top: 25px; display: block; width:170px; height: 80px; }
+
+/* nav 영역 */
+#header .width_con ul.nav{ position: absolute; top: 34px; right: 0; }
+/* nav 드롭다운 영역, 기본 opacity 값 0 */
+#header .width_con ul.nav:after { opacity: 0; content: ''; position: fixed; top: 310px; left:50%; margin-left: -960px; width: 1920px; height: 1px; box-shadow: 0 0 10px 0 rgba(61, 61, 61, 1); }
+/* open 클래스 추가 시 opacity 값 1(보임)  */
+#header .width_con ul.nav.open:after { opacity: 1; transition: all 0.35s ease-in-out 0.15s; } 
+
+/* nav의 대메뉴 요소 영역(li) 수평 정렬 */
+#header .width_con ul.nav li{ display: inline-block; *display: inline; *zoom: 1; height: 49px; margin: 0 0 0 67px; text-transform: uppercase; }
+/* lang 영역 */
+#header .width_con ul.nav li select{ margin-top: -6px; border:none; color:#666; background: none; cursor: pointer; }
+/* 대메뉴 텍스트 폰트 요소 */
+#header .width_con ul.nav li a{ font-size: 16px; font-weight: 400; border-bottom: 1px solid transparent; transition: all 0.15s linear; }
+/* 대메뉴 텍스트에 마우스 올릴 시 폰트 색 #be9193으로 바뀌고 밑줄 */
+#header .width_con ul.nav li a:hover{ color: #be9193 !important; border-bottom-color: #be9193; }
+/* 각 드롭다운 요소 영역 */
+#header .width_con ul.nav li dl{ position: fixed; top: 80px; width: 1200px; height: 0; padding: 0; left: 50%; margin-left: -600px; box-shadow: 360px 0 0 0 #fff, -360px 0 0 0 #fff; background: rgb(255, 255, 255); border-top: 0px solid rgba(0,0,0,0); line-height: 1.25em; overflow: hidden; transition: all 0.35s ease-in-out;
+display: inline-block; }
+/* dl 하위 요소 모두 적용할 스타일 */
+#header .width_con ul.nav li dl *{ display: inline-block; color: transparent; transition: inherit; }
+/* 대메뉴 요소 영역에 hover시 드롭다운 펼쳐진 후 스타일 */
+#header .width_con ul.nav li:hover dl{ display: inline-block; height: 150px; padding: 40px 0; border-top: 1px solid rgba(0,0,0,0.1);  z-index: 99999; }
+/* 대메뉴 요소 영역에 hover시 dl 하위 요소 모두 적용할 스타일 */
+#header .width_con ul.nav li:hover dl *{ color: #000; }
+/* 텍스트 들어가는 영역 위치 */
+#header .width_con ul.nav li dl .txt_area{ width: 533px; height: 153px; margin-left: 67px; }
+/* 텍스트 영역 정의 태그 헤더 스타일 */
+#header .width_con ul.nav li dl .txt_area dt{ display: block; font-size: 20px; font-weight: 600; margin: 6px 0 20px 0; }
+/* 텍스트 영역 정의 태그 스타일 */
+#header .width_con ul.nav li dl .txt_area dd.txt { display: block; margin: 0 0 10px 0; font-size: 18px; text-transform: capitalize; }
+/* 텍스트 영역 정의 태그 마지막은 위치 잡기 수월하도록 margin bottom 값 초기화 */
+#header .width_con ul.nav li dl .txt_area dd.txt:last-child{ margin-bottom: 0; }
+/* 이미지 영역 */
+#header .width_con ul.nav li dl .img_area{ display: inline-flex; position: relative; left: -4px; top: -2px; width: 533px; height: 153px; }
+/* 이미지 01 */
+#header .width_con ul.nav li dl .img_area img.img_01{ height: 100%; margin-right: 36px; }
+/* 이미지 02 */
+#header .width_con ul.nav li dl .img_area img.img_02{ height: 100%; }
+
+
+/*Header transparent 투명 버전*/
+#header.transparent{ background: rgba(255,255,255,0); }
+#header.transparent .width_con{ backdrop-filter: blur(0px); }
+#header.transparent:hover{ background: rgba(255,255,255,1); }
+#header.transparent .width_con ul.nav li a { color:#fff; }
+#header.transparent:hover .width_con ul.nav li a { color:#000; }
+/* transparent에서는 색 반전 (흰색으로) */
+#header.transparent .width_con a.btn_home { filter: invert(1); }
+/* hover시 검은색 */
+#header.transparent:hover .width_con a.btn_home { filter: invert(0); }
+#header.transparent .width_con ul.nav li select{ color:#ccc; }
+#header.transparent:hover .width_con ul.nav li select{ color:#666; }
+/* =============== header section 끝 ============== */
+
+#footer{ width: 100%; }
+#footer .width_con{}
+/* 푸터 내부 (logo+container) */
+#footer .width_con .menu_con { display: flex; padding-bottom: 60px; overflow: hidden; }
+/* 푸터 내부 logo */
+#footer .width_con .menu_con .logo{ width: 721px; }
+#footer .width_con .menu_con a.btn_home img { width:170px; height: 30px; }
+/* 푸터 내부 container */
+#footer .width_con .menu_con .container{ width: 479px;  display: flex; }
+/* 푸터 내부 container 메뉴 */
+#footer .width_con .menu_con .container ul{ position: relative; right: 0;  width: 170px; }
+#footer .width_con .menu_con .container ul.menu_01{ margin: 0 36px 0 0; }
+/* 푸터 내부 container 메뉴 아이템*/
+#footer .width_con .menu_con .container ul li{ text-transform: capitalize; line-height: 1.6; }
+#footer .width_con .menu_con .container ul li a{ font-size: 14px; font-weight: 400; color: #000; }
+/* 푸터 내부 container 메뉴 아이템 hover*/
+#footer .width_con .menu_con .container ul li a:hover{ text-decoration: underline; }
+/* 푸터 내부 (copyright) */
+#footer .width_con .copyright{ font-size: 12px; font-weight: 400; color: #939393; margin: 0; display: block; position: relative; text-align: center; padding-top: 60px; }
+#footer .width_con .copyright:before{ position: absolute; content: ''; left: 0; top: 0px; width: 1200px; height: 1px; background: #ececec; }
